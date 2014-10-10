@@ -1,0 +1,366 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Taller UX - Salvemos al Usuario</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="/bower_components/foundation/css/normalize.css">
+        <link rel="stylesheet" href="/bower_components/foundation/css/foundation.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,400italic' rel='stylesheet' type='text/css'>
+
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="medium-6 columns">
+                    <a href="#home" title="Ministerio de Seguridad de Mendoza - Inicio">
+                        <img src="http://dummyimage.com/423x71/ffffff/666666.gif&amp;text=Ministerio%20de%20Seguridad" alt="Ministerio de Seguridad de Mendoza" class="branding-temp">
+                        <div class="branding branding-main"></div>
+                    </a>
+                </div>
+                <div class="medium-6 columns contact-info">
+                    <p>Consultas y turnos por teléfono<br><span class="highlight-big">0800 800 5423</span></p>
+                </div>
+            </div>
+
+
+<!-- 1.2 -->
+            <div class="row hide">
+                <div class="medium-8 columns">
+                    <h1>Trámites para licencias de conducir</h1>
+                </div>
+                <div class="medium-4 columns">
+                    <nav>
+                        <ul class="inline-list">
+                            <li>
+                                <a href="#inicio">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#requisitos">Requisitos</a>
+                            </li>
+                            <li>
+                                <a href="#consultas">Consulta de multas</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><!-- end .row -->
+
+            <div class="row hidex">
+                <div class="medium-12 columns text-center main-header">
+                    <h1>Trámites para licencias de conducir</h1>
+                </div>
+            </div><!-- end .row -->
+            <div class="row hidex">
+                <div class="medium-10 medium-offset-1 columns">
+                    <nav class="main-navigation">
+                        <dl class="tabs" data-tab>
+                            <dd class="active"><a href="#panel-inicio">Turno online</a></dd>
+                            <dd><a href="#panel-requisitos">Requisitos</a></dd>
+                            <dd><a href="#panel-multas">Consulta de multas</a></dd>
+                        </dl>
+                    </nav>
+                </div>
+            </div><!-- end .row -->
+
+        </header>
+
+        <div class="wrapper-main-content page-row page-row-expanded">
+
+<!-- 1.4 -->
+            <div class="row hide">
+                <div class="medium-6 medium-offset-3 columns">
+                    <form action="#" method="post" accept-charset="utf-8">
+                        <div class="row">
+                            <div class="medium-12 columns">
+                                <h2>Ingrese sus datos</h2>
+                            </div>
+                        </div><!-- end .row -->
+
+                        <div class="row">
+                            <div class="medium-12 columns">
+                                <label for="tipo-tramite">Trámite</label>
+                                <select name="tipo-tramite" id="tipo-tramite" class="medium-6">
+                                    <option value="1">Renovación / Primera vez</option>
+                                    <option value="6">Obtener duplicado</option>
+                                    <option value="7">Obtener duplicado / Multas pagas con comprobante</option>
+                                    <option value="2">Modifica categoría</option>
+                                    <option value="3">Modifica categoría / Multas pagas con comprobante</option>
+                                    <option value="4">Habilitación</option>
+                                    <option value="5">Renovación de Tarjeta médica</option>
+                                    <option value="8">Multas pagas con comprobante</option>
+                                </select>
+                            </div>
+                        </div><!-- end .row -->
+
+                        <div class="row">
+                            <div class="medium-12 columns">
+                                <label for="sexo">Sexo</label>
+                                <input type="radio" name="sexo" value="M" id="sexo-m"><label for="sexo-m">Masculino</label>
+                                <input type="radio" name="sexo" value="F" id="sexo-f"><label for="sexo-f">Femenino</label>
+                            </div>
+                        </div><!-- end .row -->
+
+                        <div class="row">
+                            <div class="medium-6 columns">
+                                <label for="documento-tipo">Tipo</label>
+                                <select name="id-type" id="documento-tipo">
+                                    <option value="1">Documento Único</option>
+                                    <option value="2">Libreta de Enrolamiento</option>
+                                    <option value="3">Libreta Cívica</option>
+                                    <option value="4">Cédula de Extranjería</option>
+                                    <option value="4">Cédula Federal</option>
+                                    <option value="4">Cédula de Identidad Mendoza</option>
+                                    <option value="4">Documento extranjero</option>
+                                    option
+                                </select>
+                            </div>
+                            <div class="medium-6 columns">
+                                <label for="document-numero">N° Documento</label>
+                                <input type="text" id="document-numero" value="">
+                            </div>
+                        </div><!-- end .row -->
+
+                        <div class="row">
+                            <div class="medium-12 columns text-right">
+                                <a href="step_02.html" class="button radius primary tiny">SIGUIENTE</a>
+                            </div>
+                        </div><!-- end .row -->
+                    </form>
+                </div>
+            </div><!-- end .row -->
+
+            <div class="row hidex">
+                <div class="medium-10 medium-offset-1 columns main-form">
+                    <div class="tabs-content">
+                        <div class="content active" id="panel-inicio">
+                            <form action="#" method="post" accept-charset="utf-8">
+                                <div class="row">
+                                    <div class="medium-12 columns">
+                                        <h2 class="icon-arrow-down">Ingrese sus datos</h2>
+                                    </div>
+                                </div><!-- end .row -->
+
+                                <div class="row">
+                                    <div class="medium-3 columns">
+                                        <select name="tipo-tramite" id="tipo-tramite">
+                                            <option value="1">Renovación / Primera vez</option>
+                                            <option value="6">Obtener duplicado</option>
+                                            <option value="7">Obtener duplicado / Multas pagas con comprobante</option>
+                                            <option value="2">Modifica categoría</option>
+                                            <option value="3">Modifica categoría / Multas pagas con comprobante</option>
+                                            <option value="4">Habilitación</option>
+                                            <option value="5">Renovación de Tarjeta médica</option>
+                                            <option value="8">Multas pagas con comprobante</option>
+                                        </select>
+                                    </div>
+                                    <div class="medium-3 columns">
+                                        <select name="id-type" id="documento-tipo">
+                                            <option value="1">Tipo de documento</option>
+                                            <option value="1">Documento Único</option>
+                                            <option value="2">Libreta de Enrolamiento</option>
+                                            <option value="3">Libreta Cívica</option>
+                                            <option value="4">Cédula de Extranjería</option>
+                                            <option value="4">Cédula Federal</option>
+                                            <option value="4">Cédula de Identidad Mendoza</option>
+                                            <option value="4">Documento extranjero</option>
+                                            option
+                                        </select>
+                                    </div>
+                                    <div class="medium-3 columns">
+                                        <input type="text" id="documento-numero" placeholder="N° Documento">
+                                    </div>
+                                    <div class="medium-3 columns">
+                                        <a href="step_02.html" class="button radius primary tiny expand">INICIAR TRÁMITE ONLINE</a>
+                                    </div>
+                                </div><!-- end .row -->
+                            </form>
+                        </div>
+                        <div class="content" id="panel-requisitos">
+                          <h2>Requisitos</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
+                        <div class="content" id="panel-multas">
+                          <h2>Consulte sus multas</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end .row -->
+
+
+<!-- 1.6. -->
+            <div class="row locations hide">
+                <div class="medium-12 columns">
+                    <h3>Sedes para tramitar licencia de conducir</h3>
+                </div>
+            </div><!-- end .row -->
+            <div class="row locations-detail hide">
+                <div class="medium-4 columns">
+                    <h4>Gran Mendoza</h4>
+
+                    <h5>Capital</h5>
+                    <p>Particulares: Subsuelo de Municipalidad de la Capital<br><span class="highlight">9 de Julio 500</span></p>
+                    <p>Profesionales: <span class="highlight">Mitre 1232</span></p>
+
+                    <h5>Godoy Cruz</h5>
+                    <p>Hipermercado Libertad<br><span class="highlight">Av. Joaquín V. González y Cipolletti</span></p>
+
+                    <h5>Guaymallén</h5>
+                    <p><span class="highlight">Carril Godoy Cruz 3195</span><br>Villa Nueva</p>
+
+                    <h5>Las Heras</h5>
+                    <p>Comisaría 43<br><span class="highlight">Bariloche s/n - Manzana 35 - B° Municipal</span></p>
+
+                    <h5>Luján de Cuyo</h5>
+                    <p><span class="highlight">Italia 5475</span><br>Chacras de Coria</p>
+
+                    <h5>Maipú</h5>
+                    <p><span class="highlight">Carril Godoy Cruz 319</span><br>Villa Nueva</p>
+
+                </div>
+                <div class="medium-4 columns">
+                    <h4>Valle de Uco</h4>
+
+                    <h5>Tunuyán</h5>
+                    <p><span class="highlight">Av. San Martín esq. Emilio Civit</span><br>Frente a Comisaría 15</p>
+
+                    <h4>Zona Este</h4>
+
+                    <h5>Rivadavia</h5>
+                    <p><span class="highlight">Constitución 47 y San Isidro</span></p>
+
+                    <h5>San Martín</h5>
+                    <p>Distrital N° 3<br><span class="highlight">Isidoro Bousquet s/n</span><br>La Colonia - Junín</p>
+
+                    <h5>Santa Rosa</h5>
+                    <p><span class="highlight">Ruta 7 y Escudero</span><br>Las Catitas </p>
+
+                </div>
+                <div class="medium-4 columns">
+                    <h4>Zona Sur</h4>
+
+                    <h5>General Alverar</h5>
+                    <p>Comisaría 14°<br><span class="highlight">San Rafael 20</span></p>
+
+                    <h5>Malargüe</h5>
+                    <p>Comisaría 24°<br><span class="highlight">Adolfo Puebla 325</span></p>
+
+                    <h5>San Rafael</h5>
+                    <p><span class="highlight">Ballofet 325</span><br>Ciudad</p>
+
+                    <h4>Lavalle</h4>
+                    <p><span class="highlight">San Martín 250 y Remedios de Escalada</span><br>Villa Tulumaya</p>
+                </div>
+            </div><!-- end .row -->
+
+
+            <div class="row locations hidxe">
+                <div class="medium-8 medium-offset-2 columns">
+                    <h3 class="icon-pin">Sedes para tramitar licencia de conducir</h3>
+                </div>
+            </div><!-- end .row -->
+            <div class="row locations-list hixde">
+                <div class="medium-3 medium-offset-2 columns">
+                    <h4>Gran Mendoza</h4>
+
+                    <h5>Capital</h5>
+                    <p>Particulares: Subsuelo de Municipalidad de la Capital<br><span class="highlight">9 de Julio 500</span></p>
+                    <p>Profesionales: <span class="highlight">Mitre 1232</span></p>
+
+                    <h5>Godoy Cruz</h5>
+                    <p>Hipermercado Libertad<br><span class="highlight">Av. Joaquín V. González y Cipolletti</span></p>
+
+                    <h5>Guaymallén</h5>
+                    <p><span class="highlight">Carril Godoy Cruz 3195</span><br>Villa Nueva</p>
+
+                    <h5>Las Heras</h5>
+                    <p>Comisaría 43<br><span class="highlight">Bariloche s/n - Manzana 35 - B° Municipal</span></p>
+
+                    <h5>Luján de Cuyo</h5>
+                    <p><span class="highlight">Italia 5475</span><br>Chacras de Coria</p>
+
+                    <h5>Maipú</h5>
+                    <p><span class="highlight">Carril Godoy Cruz 319</span><br>Villa Nueva</p>
+
+                </div>
+                <div class="medium-3 columns">
+                    <h4>Valle de Uco</h4>
+
+                    <h5>Tunuyán</h5>
+                    <p><span class="highlight">Av. San Martín esq. Emilio Civit</span><br>Frente a Comisaría 15</p>
+
+                    <h4>Zona Este</h4>
+
+                    <h5>Rivadavia</h5>
+                    <p><span class="highlight">Constitución 47 y San Isidro</span></p>
+
+                    <h5>San Martín</h5>
+                    <p>Distrital N° 3<br><span class="highlight">Isidoro Bousquet s/n</span><br>La Colonia - Junín</p>
+
+                    <h5>Santa Rosa</h5>
+                    <p><span class="highlight">Ruta 7 y Escudero</span><br>Las Catitas </p>
+
+                </div>
+                <div class="medium-3 columns end">
+                    <h4>Zona Sur</h4>
+
+                    <h5>General Alverar</h5>
+                    <p>Comisaría 14°<br><span class="highlight">San Rafael 20</span></p>
+
+                    <h5>Malargüe</h5>
+                    <p>Comisaría 24°<br><span class="highlight">Adolfo Puebla 325</span></p>
+
+                    <h5>San Rafael</h5>
+                    <p><span class="highlight">Ballofet 325</span><br>Ciudad</p>
+
+                    <h4>Lavalle</h4>
+                    <p><span class="highlight">San Martín 250 y Remedios de Escalada</span><br>Villa Tulumaya</p>
+                </div>
+            </div><!-- end .row -->
+
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="medium-6 columns contact-info">
+                    <span class="icon-phone left"></span>
+                    <p class="left">Consultas y turnos por teléfono<br><span class="highlight-big">0800 800 5423</span></p>
+                </div>
+                <div class="medium-6 columns text-right">
+                    <img src="http://dummyimage.com/230x39/333333/999999.gif&amp;text=Ministerio%20de%20Seguridad" alt="Ministerio de Seguridad de Mendoza" class="branding-temp right">
+                    <div class="branding branding-footer right"></div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/foundation/js/foundation.min.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

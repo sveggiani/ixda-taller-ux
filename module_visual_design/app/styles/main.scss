@@ -1,0 +1,272 @@
+/*
+Taller UX - Módulo Diseño Visual
+by IXDA Mendoza
+----------------------------------------------------------------------------- */
+
+/* Includes
+----------------------------------------------------------------------------- */
+
+
+/* Variables
+----------------------------------------------------------------------------- */
+$main-color: #0D64BC;
+$secondary-color: #26ADE4;
+$text-color: #333333;
+$text-color-inv: #fff;
+$text-color-dimmed: #ccc;
+$headings-color-one: #666;
+$bkg-color-one: #333333;
+$dimmed-color: #F6F6F6;
+
+
+
+/* Base styles
+----------------------------------------------------------------------------- */
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: 'Lato', sans-serif;
+    color: $text-color;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+    .page-row {
+        display: table-row;
+        height: 1px;
+    }
+
+    .page-row-expanded { height: 100%; }
+
+    .locations-list {
+        padding-bottom: 30px;
+    }
+
+footer {
+    height: 110px;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Lato', sans-serif; }
+
+.branding { display: none; }
+
+
+
+/* Organización
+----------------------------------------------------------------------------- */
+// 1.3
+header { padding-top: 30px; }
+header .contact-info { text-align: right; }
+header h1 { padding: 100px 0; }
+.main-navigation { margin-bottom: 55px; }
+.main-navigation .tabs a {
+    padding: 10px 20px;
+    border-radius: 4px 4px 0 0;
+    margin-right: 3px;
+}
+.main-form { margin-top: -55px; }
+.main-form .tabs-content {
+    background-color: #fff;
+    padding: 5px 20px 0 20px;
+}
+.tabs-content .content { padding-top: 0; padding-bottom: 5px; }
+
+
+// 1.5
+.locations { margin-top: 90px; }
+.locations h3 { margin-bottom: 35px; }
+
+// 1.7
+footer { padding-top: 20px; }
+
+
+/* Color
+----------------------------------------------------------------------------- */
+// 2.1
+header { background-color: $main-color; }
+footer { background-color: $bkg-color-one; }
+
+// 2.2
+header,
+footer,
+header h1 { color: $text-color-inv; }
+
+// 2.3.
+.main-form .tabs-content { background-color: $bkg-color-one; }
+.main-form h2,
+.main-form p { color: $dimmed-color; }
+.main-navigation .tabs a {
+    background-color: transparent;
+    color: $text-color-dimmed;
+}
+.main-navigation .tabs a:hover { background-color: $bkg-color-one; }
+.main-navigation .tabs .active a {
+    background-color: $bkg-color-one;
+    color: #fff;
+}
+
+// 2.4.
+.locations h3,
+.locations-list h5 { color: $headings-color-one; }
+.locations-list h4 { color: $main-color; }
+.highlight { color: $secondary-color; }
+
+
+/* Typography
+----------------------------------------------------------------------------- */
+// 3.1.
+header .contact-info p {
+    color: $text-color;
+    line-height: 190% !important;
+}
+header .highlight-big {
+    color: $text-color-dimmed;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+// 3.2.
+header h1 { font-weight: 300; }
+
+// 3.3.
+.main-navigation .tabs a {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.main-form h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 180%;
+}
+
+// 3.4.
+.locations h3 {
+    font-size: 33px;
+    font-weight: 300;
+}
+
+// 3.5.
+.locations-list h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.locations-list h4:first-child {
+    margin-top: 0;
+}
+.locations-list h5 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.locations-list p {
+    font-size: 14px;
+}
+
+
+// 3.6
+footer .contact-info p {
+    color: $text-color-dimmed;
+    font-size: 13px;
+    line-height: 190% !important;
+}
+footer .highlight-big {
+    color: $secondary-color;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+
+/* Images & icons
+----------------------------------------------------------------------------- */
+// 4.1
+.branding-temp { display: none; }
+.branding { display: block; }
+.branding-main {
+    background: transparent url(../images/diseno_visual_assets.png) no-repeat 0px 0px;
+    width: 342px;
+    height: 58px;
+}
+.branding-footer {
+    background: transparent url(../images/diseno_visual_assets.png) no-repeat -350px 0px;
+    width: 230px;
+    height: 39px;
+}
+
+// 4.2.
+.icon-arrow-down::before {
+    display: inline-block;
+    content: '';
+    background: transparent url(../images/diseno_visual_assets.png) no-repeat 0px -99px;
+    width: 23px;
+    height: 28px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.icon-pin { margin-left: -57px; }
+.icon-pin::before {
+    display: inline-block;
+    content: '';
+    background: transparent url(../images/diseno_visual_assets.png) no-repeat -50px -100px;
+    width: 42px;
+    height: 44px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+.icon-phone {
+    display: inline-block;
+    background: transparent url(../images/diseno_visual_assets.png) no-repeat -100px -100px;
+    width: 42px;
+    height: 42px;
+    margin: 2px 8px 0 0;
+}
+
+// 4.3
+.locations-list {
+    background: #fff url(../images/bkg_locations-list.png) no-repeat bottom right;
+}
+header {
+    background-color: $main-color;
+    background-image: url(../images/bkg_header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* .row {
+    background-color: #fafafa;
+    border-bottom: 1px dotted #ddd;
+} */
+
+.placeholder-step-02 {
+    background: #fff url(../images/step_02.png) no-repeat center top;
+    height: 1395px;
+}
+
+.placeholder-step-03 {
+    background: #fff url(../images/step_03.png) no-repeat center top;
+    height: 1395px;
+}
+
+.placeholder-step-04 {
+    background: #fff url(../images/step_04.png) no-repeat center top;
+    height: 1395px;
+}
+
+.placeholder-step-05 {
+    background: #fff url(../images/step_05.png) no-repeat center top;
+    height: 1395px;
+}
+
+.placeholder-step-06 {
+    background: #fff url(../images/step_06.png) no-repeat center top;
+    height: 1745px;
+}
