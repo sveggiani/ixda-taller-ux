@@ -111,11 +111,11 @@ header h1 { color: $text-color-inv; }
 .highlight { color: $secondary-color; }
 
 *:focus {
-    border: 1px solid $focus-color !important;
+    box-shadow: 0 0 15px $focus-color !important;
 }
 
 a:focus {
-    background-color: $focus-color;
+    background-color: rgba(255,204,51,0.9);
 }
 
 
